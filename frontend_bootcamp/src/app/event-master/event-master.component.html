@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">INPUT EVENT</div>
+                <div class="panel-body">
+                    <label for="jenis_event" class="col-md-4 control-label">Jenis Event</label>
+                    <div class="col-md-6">
+                        <input id="jenis_event" type="text" class="form-control" name="jenis_event" [(ngModel)]="jenis_event" required>
+                    </div>
+
+                    <label for="nama_event" class="col-md-4 control-label">Nama Event</label>
+                    <div class="col-md-6">
+                        <input id="nama_event" type="text" class="form-control" name="nama_event" [(ngModel)]="nama_event" required>
+                    </div>
+
+                    <label for="tanggal_event" class="col-md-4 control-label">Tanggal Event</label>
+                    <div class="col-md-6">
+                        <input id="tanggal_event" type="text" class="form-control" name="tanggal_event" [(ngModel)]="tanggal_event" required>
+                    </div>
+
+                    <label for="lokasi_event" class="col-md-4 control-label">Lokasi Event</label>
+                    <div class="col-md-6">
+                        <input id="lokasi_event" type="text" class="form-control" name="lokasi_event" [(ngModel)]="lokasi_event" required>
+                    </div>
+                    
+                    <label for="harga_tikett" class="col-md-4 control-label">Harga Tiket</label>
+                    <div class="col-md-6">
+                        <input id="harga_tiket" type="text" class="form-control" name="harga_tiket" [(ngModel)]="harga_tiket" required>
+                    </div>
+
+                    <label for="jumlah_tiket" class="col-md-4 control-label">Jumlah Tiket</label>
+                    <div class="col-md-6">
+                        <input id="jumlah_tiket" type="text" class="form-control" name="jumlah_tiket" [(ngModel)]="jumlah_tiket" required>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-4">
+                            <button (click)="add()" class="btn btn-primary">
+                                Input Event
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
